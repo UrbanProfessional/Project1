@@ -1,12 +1,13 @@
-function switchSteam() {
-    console.log("hi");
+var bool = false;
+
+function switchDOE() {
     document.getElementById("fake").style.display = "block";
+    document.getElementById("main").style.display = "none";
 }
 
-function load()
+
+function doealert()
 {
-    document.getElementById("switch").addEventListener("click", () =>
-    {
-        switchSteam();
-    });
+    document.getElementById("doealert").style.display = "block";
 }
+

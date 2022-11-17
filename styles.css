@@ -1,9 +1,34 @@
-body {
-    background-color: #9fb4c7;
+@import url('https://fonts.cdnfonts.com/css/nimbus-sans-l');
+
+/* CSS Reset */
+/*
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+*/
+/* Home Page CSS */
+#main {
+    background-color: #454749;
 }
 
-h1 { 
+#main h1 { 
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
     text-align: center;
+    margin-top: 0px;
+}
+
+body {
+    margin: 0px;
 }
 
 .navbar {
@@ -11,10 +36,14 @@ h1 {
     justify-content: space-evenly;
 }
 
-.navbar a {
-    background-color: #7f7caf;
-    padding: 25px 110px 40px 110px;
-    margin-bottom: 10px;
+.navbar input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #5d5c70;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
 }
 
 #active {
@@ -24,11 +53,144 @@ h1 {
 }
 
 .blurb {
-    background-color: #28587b85;
+    background-color: #5d5c70;
     margin: 100px 10px 0px 10px;
     border-radius: 20px;
+    text-align: center;
+    font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.blurb h2 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.blurb p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#exp {
+    background-color: #5d5c70;
+    margin: 100px 10px 0px 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+#exp h2 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#exp p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* DOE Fake website CSS */
+#fake {
+    display: none;
+}
+
+#ELogo {
+    margin-top: 55px;
 }
 
 #fake {
+    padding-left: 10px;
+    width: 500px;
+    margin: auto;
+}
+
+#Signin {
+    font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#Signin h1 {
+    text-align: left;
+}
+
+#username {
+    font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 33px;
+    margin-left: 0px;
+    margin-bottom: 12px;
+    color: #212529;
+}
+
+#iuser {
+    font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
+    width: 447px;
+    height: 38px;
+    border: 1px solid #ccc;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+    color: #495057;
+    transition: all .3s ease-out;
+}
+
+#iuser:hover {
+    border-color: #4374b8;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,.3);
+    outline: 0;
+}
+
+#password {
+    font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 45px;
+    margin-left: 0px;
+    margin-bottom: 12px;
+    color: #212529;
+}
+
+#ipass {
+    width: 447px;
+    height: 38px;
+    border: 1px solid #ccc;
+    padding: 10px 20px 10px 20px;
+    font-size: small;
+    margin-bottom: 38px;
+    line-height: 1.5;
+    color: #495057;
+    transition: all .3s ease-out;
+}
+
+#ipass:hover {
+    border-color: #4374b8;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,.3);
+    outline: 0;
+}
+
+#submit {
+    font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border: 2px solid #036;
+    color: #fff;
+    background: #036;
+    box-shadow: 0 0 6px 0 transparent;
+    padding: 18px 30px 18px 30px;
+    margin-bottom: 30px;
+    transition: color .3s ease-in-out,background .3s ease-in-out,box-shadow .3s ease-in-out;
+}
+
+#submit:hover {
+    cursor: pointer;
+    border-color: #4374b8;
+    text-decoration: none;
+    color: #fff;
+    background: #4374b8;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,.3);
+}
+
+#doealert {
     display: none;
 }
