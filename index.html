@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="login v6 global responsive_page">
+    <!-- To allow a change between the main info page and the phishing test, I used 2 divs within the body that
+    both represented a different page. The javascript file would switch between these two divs via the switch functions -->
     <div id = "main">
         <h1>The Phishing Emporium</h1>
+        <!-- Navigation bar to enter the tests, instead of basic links it uses form submit buttons that action 
+        attribute points to the other page-->
         <div class="navbar">
             <form action="phishjupiter.html"><input type="submit" value="Test 1"></form>
             <form action="phishchase.html"><input type="submit" value="Test 2"></form>
             <form action="phishdoe.html"><input type="submit" value="Test 3"></form>
         </div>  
+        <!-- WIP Google Ads, I suspect this isn't working since the website is hosted on github pages, not a valid
+        host for a monetized webpage. -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9423886682841642"
         crossorigin="anonymous"></script>
+
+        <!-- General Information about phishing, written as if explaining it to a technology illiterate. -->
         <div class="blurb">
             <h2>Welcome!</h2>
             <p>To the phishing education emporium. In this webpage you will learn and see
@@ -24,6 +32,8 @@
             <p>First and foremost, what is phishing?</p>
         </div>
 
+        <!-- Each rounded rectangle holded text is a div, overall this organized the website into pleasing
+        chunks of info. -->
         <div id="exp">
             <h2>Context</h2>
             <p>Well, phishing, as the word might hint, is the act of luring users into interacting with 
@@ -42,6 +52,7 @@
             Now click 'Test 1' on the top of the page to begin!
             </p>
         </div>
+        <!-- Copyright footer as stated in the rubric. -->
         <footer id="foot">&copy Copyright of Urban Professional 2022 - 2022</footer>
     </div>
 </body>

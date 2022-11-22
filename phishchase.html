@@ -26,9 +26,44 @@
             <p>Most should be familiar with the average phishing email with some reward or verification
             that involves entering financial information. Of course, if one were to enter such info,
             the phisher would then have access to their private funds. Sadly, many people, especially the elderly,
-            fall for these attack. Below are several examples of said emails:
+            fall for these attack. Here is some data pertaining to phishing as of 2022: 
+            Below are several examples of said emails and some statistics about phishing:
             </p>
+
+            <!-- It was quite a pain to get the table to work in mobile and desktop plus it looking
+            good whatsoever. This is why I generally like to avoid using tables at all. But I got it
+            looking sufficient for the page. -->
+            <table style="width:50%" id="ptable">
+                <thead>
+                    <tr>
+                        <th>Statistics about Phishing (2022)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <!-- Real Data taken from an article -->
+                        <td></td>
+                        <td>Gmail</td>
+                        <td>Webmail</td>
+                        <td>SaaS</td>
+                        <td>SMS</td>
+                    </tr>
+                    <tr>
+                        <td>Phishing Attacks used...</td>
+                        <td>36%</td>
+                        <td>72%</td>
+                        <td>34.7%</td>
+                        <td>36%</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <!-- Source for the data -->
+            <a id="source" href="https://expertinsights.com/insights/50-phishing-stats-you-should-know/">Source</a>
             <br>
+            <br>
+            <!-- Photo gallery, on mobile this is a vertical flexbox for optimal viewing, on desktop
+            it is a 2x2 grid to be space efficient. -->
             <div id="grid">
                 <img id="gridimg" src="Images/grid1.png" alt="Error">
                 <img id="gridimg" src="Images/grid2.png" alt="Error">
@@ -47,6 +82,7 @@
             Click the button below to start the test. Once in the test, you may return by
             the button on the top.
             </p>
+            <!-- Button to switch to the phishing test div -->
             <button id="start" onclick="switchP()">View</button>
         </div>
         <br>

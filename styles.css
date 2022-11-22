@@ -13,6 +13,7 @@
 }
 */
 /* Home Page CSS */
+
 #main {
     background-color: #454749;
 }
@@ -54,14 +55,14 @@ body {
 
 .blurb {
     background-color: #5d5c70;
-    margin: 100px 10px 0px 10px;
+    margin: 100px 50px 0px 50px;
     border-radius: 20px;
     text-align: center;
     font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
     font-weight: bold;
     color: #fff;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .blurb h2 {
@@ -76,14 +77,14 @@ body {
 
 #exp {
     background-color: #5d5c70;
-    margin: 100px 10px 0px 10px;
+    margin: 100px 50px 0px 50px;
     border-radius: 20px;
     text-align: center;
     font-family: "Helveltica Neue",Helvetica,Arial,sans-serif;
     font-weight: bold;
     color: #fff;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #exp h2 {
@@ -96,7 +97,7 @@ body {
     padding-bottom: 20px;
 }
 
-/* DOE Fake website CSS */
+/* Fake website CSS */
 #fake {
     display: none;
 }
@@ -186,6 +187,7 @@ body {
     transition: color .3s ease-in-out,background .3s ease-in-out,box-shadow .3s ease-in-out;
 }
 
+/* Submit button for the DOE phish test */
 #submit:hover {
     cursor: pointer;
     border-color: #4374b8;
@@ -202,7 +204,8 @@ body {
 /* Special CSS for phishjupiter.html */
 
 #standardimg {
-    height: 300px;
+    height: 50%;
+    width: 50%;
     border: 3px solid #212529;
     border-radius: 10px;
     margin-left: auto;
@@ -235,6 +238,7 @@ body {
     transition: color .3s ease-in-out,background .3s ease-in-out,box-shadow .3s ease-in-out;
 }
 
+/* CSS Selector for the Start Test Button, styles it to look professional */
 #start:hover {
     cursor: pointer;
     border-color: #00f00c;
@@ -257,8 +261,11 @@ body {
     padding: 18px 30px 18px 30px;
     margin-bottom: 30px;
     transition: color .3s ease-in-out,background .3s ease-in-out,box-shadow .3s ease-in-out;
+    position: absolute;
+    left: 0px;
 }
 
+/* Same as select button but instead returns from the phish test. */
 #end:hover {
     cursor: pointer;
     border-color: #f00000;
@@ -268,16 +275,46 @@ body {
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,.3);
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    gap: 10px;
-}
-
-#gridimg {
-    height: 200px;
-    width: 100%;
+#ptable {
+    margin-left: auto;
+    margin-right: auto;
     border: 3px solid #212529;
     border-radius: 10px;
+}
+
+#source {
+    font-size: small;
+}
+
+/* CSS Changes on Desktop version of page */
+@media screen and (min-width: 420px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin: 0px 14px 0px 7px;
+    }
+    
+    #gridimg {
+        height: 100%;
+        width: 100%;
+        border: 3px solid #212529;
+        border-radius: 10px;
+    }
+}
+
+/* CSS Changes on Mobile Version of Page */
+@media screen and (max-width: 420px) {
+    #grid {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 14px 0px 7px;
+    }
+    
+    #gridimg {
+        height: 100%;
+        width: 100%;
+        border: 3px solid #212529;
+        border-radius: 10px;
+    }  
 }
